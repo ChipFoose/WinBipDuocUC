@@ -1,0 +1,36 @@
+{% extends 'usuario/plantilla.html'%}
+{% block contenido %}
+<div class="col-xs-12 presentacion">
+    <form action="/postsignup/" method="post" id="formulario">
+        {% csrf_token %}
+        <h1 class="center-xs">
+            Ingrese su correo y contraseña para iniciar sesión en WinBip.
+        </h1>
+        <div class="row formulario_style">
+            <div class="col-xs-12 col-md-6">
+
+                <div class="col-xs-12 col-md-9 separacion_form">
+                    <label for="email">Ingrese su email</label>
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Introduzca email."
+                        required>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+
+                <div class="col-xs-12 col-md-9 separacion_form">
+                    <label for="pass">Ingrese su contraseña</label>
+                    <input id="pass" type="password" class="form-control" name="pass"
+                        placeholder="Introduzca su contraseña." required>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-offset-11 ">
+                <input type="submit" value="Registrarse" id="registrarse">
+
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+{% endblock contenido %}

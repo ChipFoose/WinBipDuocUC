@@ -1,0 +1,129 @@
+{% extends 'usuario/plantilla.html'%}
+
+{% load static %}
+{% block contenido %}
+<div class="row center-xs ">
+    <div class="col-xs-12 ">
+        <div class="row presentacion">
+            <div class="col-xs-12">
+                <h1 class="center-xs ">
+                    Premios
+                    <br>
+                    <br>
+
+
+                    <div class="row parrafos_iz">
+                        <div class="col-xs-12">
+                            <h5 id="izquierda">
+                                <p>
+                                    Estimado usuario(a), con el uso de nuestra aplicación WinBip, tus viajes
+                                    serán menos
+                                    rutinarios y más divertidos. Es por esto que queremos enseñarte como
+                                    funcionará el
+                                    sistema de premios y progreso.
+                                </p>
+                                <p>
+                                    Por cada viaje que hagas, obtendrás puntos que dependerá si usas metro
+                                    o transantiago:
+                                    <br>
+                                    <br>
+                                    <img id="Transantiago" src="{% static 'usuario/imagenes/Transantiago.png' %}"
+                                        alt="Transantiago">
+                                    Transantiago: 50 puntos.
+                                    <br>
+                                    <br>
+                                    <img id="MetroSantiago" src="{% static 'usuario/imagenes/MetroSantiago.png' %}"
+                                        alt="MetroSantiago">
+                                    Metro de Santiago: 60 puntos.
+                                    <br>
+                                    <br>
+                                    Los puntos ganados se irán acumulando en una barra de progreso que tiene
+                                    10000 puntos como máximo. Dentro de esta barra, irás obteniendo diversas
+                                    recompensas
+                                    a medida que más vayas viajando:
+                                    <br>
+                                    <br>
+                                    <img id="Star" src="{% static 'usuario/imagenes/estrella.png' %}" alt="Star">
+                                    1000 puntos: ¡Potenciador doble en tu próximo pasaje!
+                                    <br>
+                                    <br>
+                                    <img id="Star" src="{% static 'usuario/imagenes/estrella.png' %}" alt="Star">
+                                    2500 puntos: ¡Descuento de un 15% en tu próximo pasaje y un bonus de 100
+                                    puntos!.
+                                    <br>
+                                    <br>
+                                    <img id="Star" src="{% static 'usuario/imagenes/estrella.png' %}" alt="Star">
+                                    5000 puntos: ¡Descuento de un 30% en tu próximo pasaje y un potenciador
+                                    triple en tu siguiente viaje!.
+                                    <br>
+                                    <br>
+                                    <img id="Star" src="{% static 'usuario/imagenes/estrella.png' %}" alt="Star">
+                                    7500 puntos: ¡Descuento de un 50% en tu próximo pasaje y un bonus de 300
+                                    puntos.!
+                                    <br>
+                                    <br>
+                                    <img id="Star" src="{% static 'usuario/imagenes/estrella.png' %}" alt="Star">
+                                    10000 puntos: ¡2 pasajes gratis!.
+                                    <br>
+                                    <br>
+                                    Una vez que hayas completado la barra de progreso al nivel máximo, se
+                                    reiniciará automáticamente
+                                    para que puedas volver a disfrutar de los beneficios de nuestra aplicación.
+                                </p>
+
+                            </h5>
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <img id="Insignia" src="{% static 'usuario/imagenes/Chapa.png' %}" alt="Insignias"> Insignias
+                </h1>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="row " id="FondoInsignias">
+    <div class="col-xs-12 letra_negra" id="explicacion_fondo">
+        <h5>
+            <br>
+            Para nosotros, no nos basta con darte solo beneficios por usar WinBip, también queremos que
+            te sientas único y especial frente a los demás. Es por eso, que deseamos destacarte
+            entre la multitud asignándote insignias y apodos que te representen según los lugares u horarios en
+            los que viajas.
+            Algunos de esos son:
+            <br>
+            <br>
+            <li>
+                <img id="Patiperro" src="{% static 'usuario/imagenes/patiperro.png' %}" alt="Patiperro">
+                Patiperro: No te importa el lugar en el que estés, ni cuánto es la distancia,
+                lo tuyo es viajar y no importa el cómo.
+                <br>
+                <img id="SantaClaus" src="{% static 'usuario/imagenes/SantaClaus.png' %}" alt="SantaClaus">
+                Viejo pascuero: Una vez al año, solo usaste el metro o el transantiago.
+                <br>
+                <img id="Sombrio" src="{% static 'usuario/imagenes/batman.png' %}" alt="Sombrio">
+                Sombrío: No te disgusta la luz, pero prefieres viajar a través de la oscuridad.
+                <br>
+                <img id="Centelleante" src="{% static 'usuario/imagenes/Centelleante.png' %}" alt="Centelleante">
+                Centelleante: Por las mañanas, o al menos mientras haya luz, no paras de brillar mientras
+                viajas!
+                <br>
+                <br>
+                ¡Y otras más! Recuerda que mientras más viajes, mas posibilidades tienes de desbloquear una
+                nueva insignia.
+                <br>
+            </li>
+        </h5>
+
+    </div>
+</div>
+<h1 id="TopFooter">
+    WinBip es totalmente gratis y está en constantes cambios. ¡No esperes más y <a href="registro.html">únete!</a> .
+</h1>
+
+
+{% endblock contenido %}

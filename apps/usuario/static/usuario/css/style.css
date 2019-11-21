@@ -1,0 +1,265 @@
+*{
+    margin: 0%;
+}
+body{
+    margin-right: 0px !important;
+    margin: 0px;
+    background-image: url(ciudad.jpg);
+    width: auto;
+    height: auto;
+}
+
+container-fluid{
+    margin: 0px -8px 0px -8px;
+}
+a{
+    list-style: none;
+    color: white;
+}
+._top{
+ 
+    margin: 0px !important;
+ 
+}
+
+#barranav{
+    text-align: center;
+    
+    padding-bottom: 5px;
+    padding-top: 20px;
+    border-width: 5px;
+    
+    margin: 0 -8px 0 -8px;
+    bottom: -15px;
+    position: relative;
+    background-color: black;
+    
+    }
+li{
+    list-style: none;
+}
+.img_fluid{
+    max-width: 100%;
+    width: auto;
+    
+}
+#fondo_inicio{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    align-content: center;
+    background-image: linear-gradient(90deg,rgb(17, 106, 240),rgb(235, 190, 43) );
+}
+#win_logo{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-content: center;
+    width: 25%;
+        
+}
+
+
+
+
+.content-todo{
+    width: 210px;
+    margin-left: 47%;
+    margin-top: -250px;
+    perspective: 1000px;
+    position: relative;
+
+}
+
+.content-carrousel{
+    width: 100%;
+    animation: rotar 10s infinite linear;
+    position: absolute;
+    transform-style: preserve-3d;
+
+
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    
+    
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(255px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(45deg) translateZ(255px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(90deg) translateZ(255px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(135deg) translateZ(255px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(180deg) translateZ(255px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(225deg) translateZ(255px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(270deg) translateZ(255px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(315deg) translateZ(255px);}                                                            
+.content-carrousel figure:nth-child(9){transform: rotateY(360deg) translateZ(255px);    }                                                            
+          
+.content-carrousel img{
+    width: 210px;
+
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+
+
+h1, h2 , h3, h4, h5, h6{
+    color: white;
+    font-family: Bitter;
+}
+#izquierda{
+
+   text-align: left;
+   
+}
+
+.presentacion{
+    color:black;
+    padding: 50px;
+    
+    
+}
+.parrafos_iz{
+    border: 5px white inset;
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: black;
+    opacity: 0.65;
+}
+
+.letra_blanca{
+    color: black;
+    font-family: Bitter;
+}
+#explicacion{
+    text-align: left;
+    padding-left: 44px;
+    padding-bottom: 35px;
+    padding-right: 100px;
+    padding-top: 5px;
+    block-size: 300px;
+    
+    opacity: 0.8;
+    
+}
+#FondoInsignias{
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 35px;
+    block-size: 400px;
+        
+}
+#explicacion_fondo{
+   
+    border: 5px white inset;
+    background-color: black;
+    
+}
+#botones{
+
+    padding: 20px;
+}
+.formulario_style{
+
+    padding: 20px;
+    text-align: left;
+    background-image: linear-gradient(90deg,rgb(17, 106, 240),rgb(235, 190, 43) );
+}
+.formulario_bip{
+
+    padding: 20px;
+    text-align: left;
+    
+}
+#separacion_form{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#ayudabip{
+    
+    margin-top: 10px;
+    width: 25px;  
+   
+}
+
+#espacio{
+    padding-top: 100px;
+}
+ 
+#Transantiago{
+width: 40px;
+height: 40px; 
+}
+
+#Star{
+width: 40px;
+height: 40px;
+}
+
+#MetroSantiago{
+width: 40px;
+height: 40px;
+}
+
+#Insignia{
+    width: 80px;
+    height: 80px;
+}
+
+#Patiperro{
+    width: 40px;
+    height: 40px;
+}
+
+#SantaClaus{
+    width: 40px;
+    height: 40px;
+}
+#Sombrio{
+    width: 40px;
+    height: 40px;
+}
+#Centelleante{
+    width: 40px;
+    height: 40px;
+}
+
+#TopFooter{
+    margin-top: 75px;
+    padding: 8%;
+    color: white;
+    text-align: center
+}
+footer{
+text-align: left;
+padding: 20px;
+width: 100%;
+background-image: linear-gradient(90deg,rgb(17, 106, 240),rgb(235, 190, 43) );
+font-family: bitter;
+color: white;
+}
+.footer_registro{
+margin-top: 10%;
+
+}
+    
+

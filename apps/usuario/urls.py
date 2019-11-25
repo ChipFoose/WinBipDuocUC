@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from .views import PaginaInicio, Premios, Registro, signup, IniciarSesion, postsignup
+from .views import PaginaInicio, Premios, Registro, signup, IniciarSesion, postsignup, logout
 
 urlpatterns = [
     # 1. url de la pagina (PaginaInicio/), 2. el nombre de la funcion, 3. Alias de la pagina
@@ -9,5 +9,6 @@ urlpatterns = [
     path('registro.html/', Registro, name='registro'),
     path('signup/', signup, name='signup'),
     path('iniciarsesion.html', IniciarSesion, name='iniciarsesion'),
-    path('postsignup/', postsignup, name='postsignup')
+    path('postsignup/', postsignup, name='postsignup'),
+    path('logout/', logout, name='logout')
 ]

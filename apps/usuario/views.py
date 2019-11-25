@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import pyrebase
+from django.contrib import auth
 
 config = {
     'apiKey': "AIzaSyDmzZsjKBCzqAHYGPQesENd2GPkgM436p0",
@@ -14,7 +15,7 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 
-auth = firebase.auth()
+authe = firebase.auth()
 database = firebase.database()
 
 
@@ -37,9 +38,14 @@ def IniciarSesion(request):
 def postsignup(request):
     email = request.POST.get('email')
     passw = request.POST.get('pass')
-
-    user = auth.sign_in_with_email_and_password(email, passw)
-
+    try:
+        user = authe.sign_in_with_email_and_password(email, passw)
+    except:
+        message = "Correo o contraseña incorrecto, por favor intente de nuevo."
+        return render(request, 'usuario/iniciarsesion.html', {"messg": message})
+    print(user['idToken'])
+    session_id = (user['idToken'])
+    request.session['uid'] = str(session_id)
     return render(request, 'usuario/welcome.html')
 
 
@@ -52,7 +58,7 @@ def signup(request):
     email = request.POST.get('email')
     passw = request.POST.get('pass')
 
-    user = auth.create_user_with_email_and_password(email, passw)
+    user = authe.create_user_with_email_and_password(email, passw)
 
     uid = user['localId']
 
@@ -61,4 +67,9 @@ def signup(request):
 
     database.child("Usuarios").child(uid).child(
         "Detalles de los usuarios").set(data)
-    return render(request, 'usuario/welcome.html')
+    return render(request, 'usuario/welcome.html', {"e": nombre})
+
+
+def logout(request):
+    auth.logout(request)
+    return render(request, 'usuario/iniciarsesion.html')
